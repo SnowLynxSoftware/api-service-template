@@ -1,0 +1,28 @@
+{
+  "name": "vt-api",
+  "version": "2024.1.1",
+  "description": "The Official Vista Table API.",
+  "scripts": {
+    "start": "npm run serve:local",
+    "serve:local": "npx tsc-watch --onSuccess \"node --env-file .env ./dist/api/main.js\""
+  },
+  "dependencies": {
+    "@fastify/cookie": "^9.2.0",
+    "@fastify/cors": "^8.5.0",
+    "@fastify/helmet": "^11.1.1",
+    "@fastify/middie": "^8.3.0",
+    "@sendgrid/mail": "^8.1.0",
+    "fast-jwt": "^3.3.2",
+    "fastify": "^4.25.2",
+    "pg": "^8.11.3",
+    "reflect-metadata": "^0.2.1",
+    "tsyringe": "^4.8.0",
+    "typeorm": "^0.3.17"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "prettier": "^3.1.1",
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.3.3"
+  }
+}
